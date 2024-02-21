@@ -1,11 +1,20 @@
-<nav class="navbar navbar-expand navbar-dark bg-dark">
-  <a href="#" class="navbar-brand">Tuto-Crud</a>
-  <div class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a routerLink="tutorials" class="nav-link">Tutorials</a>
-    </li>
-    <li class="nav-item">
-      <a routerLink="add" class="nav-link">Add</a>
-    </li>
-  </div>
-</nav>
+<!--<nav class="navbar navbar-expand navbar-dark bg-dark">-->
+<!--  <a href="#" class="navbar-brand">Tuto-Crud</a>-->
+<!--  <div class="navbar-nav mr-auto">-->
+<!--    <li class="nav-item">-->
+<!--      <a routerLink="tutorials" class="nav-link">Tutorials</a>-->
+<!--    </li>-->
+<!--    <li class="nav-item">-->
+<!--      <a routerLink="add" class="nav-link">Add</a>-->
+<!--    </li>-->
+<!--  </div>-->
+<!--</nav>-->
+
+<p-menubar [model]="items" class="text-align: center;">
+  <ng-template pTemplate="start">
+    <img src="assets/showcase/images/primeng.svg" height="40" class="p-mr-2">
+  </ng-template>
+  <ng-template pTemplate="end">
+    <input type="text" pInputText placeholder="Search">
+  </ng-template>
+</p-menubar>

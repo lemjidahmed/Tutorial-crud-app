@@ -10,7 +10,10 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { AddTutorialComponent } from './add-tutorial/add-tutorial.component';
 import { FilterComponent } from './filter/filter.component';
-
+import {ButtonModule} from 'primeng/button';
+import {MenubarModule} from 'primeng/menubar';
+import {MenuItem, SharedModule} from 'primeng/api';
+import {InputTextModule} from "primeng/inputtext";
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +23,17 @@ import { FilterComponent } from './filter/filter.component';
     AddTutorialComponent,
     FilterComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        FormsModule,
-        HttpClientModule,
-        ReactiveFormsModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    ButtonModule,
+    MenubarModule,
+    InputTextModule,
+    SharedModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
